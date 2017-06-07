@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A455D421EE7DC540079FF1E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5A455D411EE7DC540079FF1E /* README.md */; };
 		5A76FC161EE53E04001A65B9 /* BasicManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A76FC151EE53E04001A65B9 /* BasicManagedObjectContext.m */; };
 		5A76FC191EE55CD9001A65B9 /* RequestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A76FC181EE55CD9001A65B9 /* RequestListViewController.m */; };
 		5A76FC1D1EE55DEB001A65B9 /* RequestDealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A76FC1B1EE55DEB001A65B9 /* RequestDealViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A455D411EE7DC540079FF1E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5A76FC141EE53E04001A65B9 /* BasicManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicManagedObjectContext.h; sourceTree = "<group>"; };
 		5A76FC151EE53E04001A65B9 /* BasicManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicManagedObjectContext.m; sourceTree = "<group>"; };
 		5A76FC171EE55CD9001A65B9 /* RequestListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestListViewController.h; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		5ACCA3DA1EE50031000C3A05 = {
 			isa = PBXGroup;
 			children = (
+				5A455D411EE7DC540079FF1E /* README.md */,
 				5ACCA3E51EE50031000C3A05 /* CompleteCoreDataDemo */,
 				5ACCA3E41EE50031000C3A05 /* Products */,
 			);
@@ -238,6 +241,7 @@
 				5ACCA40D1EE5071A000C3A05 /* DevInsertCommandVC.m in Sources */,
 				5ACCA3F41EE50031000C3A05 /* CompleteCoreDataDemo.xcdatamodeld in Sources */,
 				5ACCA3E81EE50031000C3A05 /* main.m in Sources */,
+				5A455D421EE7DC540079FF1E /* README.md in Sources */,
 				5A76FC1D1EE55DEB001A65B9 /* RequestDealViewController.m in Sources */,
 				5ACCA4091EE502C6000C3A05 /* CommandModel.m in Sources */,
 				5A76FC191EE55CD9001A65B9 /* RequestListViewController.m in Sources */,
