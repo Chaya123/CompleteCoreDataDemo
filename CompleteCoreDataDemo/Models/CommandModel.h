@@ -28,6 +28,6 @@ typedef enum{
 
 @property(nonatomic,strong) NSString *solidCapacity;/**<硬盘容量*/
 
-@property(nonatomic,strong) id dealStatus;/**<需求状态*/
+@property(nonatomic,strong) NSString *dealStatus;/**<需求状态*/
 
 @end
