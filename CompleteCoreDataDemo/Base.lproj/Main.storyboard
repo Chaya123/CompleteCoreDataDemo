@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VNL-BT-Uv0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rM0-3F-nlA">
+            <objects>
+                <navigationController id="VNL-BT-Uv0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mXp-be-pO9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vTH-wa-mQy" kind="relationship" relationship="rootViewController" id="atl-H6-5g9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVh-8o-JPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-783" y="145"/>
+        </scene>
+        <!--首页入口-->
+        <scene sceneID="zGn-tW-Cl8">
+            <objects>
+                <viewController id="vTH-wa-mQy" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SFy-EQ-EEw"/>
+                        <viewControllerLayoutGuide type="bottom" id="kLV-Sb-0kq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Yx-ex-va1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b41-hF-pcN">
+                                <rect key="frame" x="36" y="70" width="303" height="50"/>
+                                <color key="backgroundColor" red="0.8037109375" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZUJ-5d-4fc"/>
+                                </constraints>
+                                <state key="normal" title="开发提交需求入口"/>
+                                <connections>
+                                    <action selector="dev_insertACommand:" destination="vTH-wa-mQy" eventType="touchUpInside" id="5yV-Dk-bY0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgI-Ss-RsP">
+                                <rect key="frame" x="36" y="150" width="303" height="50"/>
+                                <color key="backgroundColor" red="0.77799479166666663" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="q21-M4-gez"/>
+                                </constraints>
+                                <state key="normal" title="开发查询需求列表入口"/>
+                                <connections>
+                                    <action selector="dev_QueryCommandList:" destination="vTH-wa-mQy" eventType="touchUpInside" id="QQy-2o-5Q7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaU-a4-TGP">
+                                <rect key="frame" x="36" y="370" width="303" height="50"/>
+                                <color key="backgroundColor" red="0.77799479169999997" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yrf-ZI-Dcn"/>
+                                </constraints>
+                                <state key="normal" title="管理成员查看需求列表、处理需求"/>
+                                <connections>
+                                    <action selector="manage_QueryAndDealCommandList:" destination="vTH-wa-mQy" eventType="touchUpInside" id="xre-6l-yPS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgz-vp-slL">
+                                <rect key="frame" x="36" y="260" width="303" height="50"/>
+                                <color key="backgroundColor" red="0.8037109375" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1xl-bc-dx6"/>
+                                </constraints>
+                                <state key="normal" title="运维成员查看需求列表、处理需求"/>
+                                <connections>
+                                    <action selector="operater_QueryAndDealCommandList:" destination="vTH-wa-mQy" eventType="touchUpInside" id="0CQ-ej-rWc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tgI-Ss-RsP" firstAttribute="leading" secondItem="4Yx-ex-va1" secondAttribute="leadingMargin" constant="20" id="4wj-bO-CHV"/>
+                            <constraint firstItem="Zgz-vp-slL" firstAttribute="top" secondItem="tgI-Ss-RsP" secondAttribute="bottom" constant="60" id="K0J-V4-I9x"/>
+                            <constraint firstItem="Zgz-vp-slL" firstAttribute="leading" secondItem="4Yx-ex-va1" secondAttribute="leadingMargin" constant="20" id="MwS-bF-m5g"/>
+                            <constraint firstItem="tgI-Ss-RsP" firstAttribute="top" secondItem="b41-hF-pcN" secondAttribute="bottom" constant="30" id="N02-mb-xDM"/>
+                            <constraint firstItem="b41-hF-pcN" firstAttribute="leading" secondItem="4Yx-ex-va1" secondAttribute="leadingMargin" constant="20" id="QgM-x0-wEK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tgI-Ss-RsP" secondAttribute="trailing" constant="20" id="feB-K1-naS"/>
+                            <constraint firstItem="NaU-a4-TGP" firstAttribute="top" secondItem="Zgz-vp-slL" secondAttribute="bottom" constant="60" id="pVJ-fF-vRw"/>
+                            <constraint firstItem="NaU-a4-TGP" firstAttribute="leading" secondItem="4Yx-ex-va1" secondAttribute="leadingMargin" constant="20" id="pno-TK-f1a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NaU-a4-TGP" secondAttribute="trailing" constant="20" id="xAW-mh-2wz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b41-hF-pcN" secondAttribute="trailing" constant="20" id="xie-D8-ZGU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zgz-vp-slL" secondAttribute="trailing" constant="20" id="y9R-mG-SbD"/>
+                            <constraint firstItem="b41-hF-pcN" firstAttribute="top" secondItem="4Yx-ex-va1" secondAttribute="topMargin" constant="70" id="zD0-07-KeI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页入口" id="naw-gc-vTn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeP-7Y-bG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.80000000000000004" y="140.77961019490255"/>
+        </scene>
+    </scenes>
+</document>
